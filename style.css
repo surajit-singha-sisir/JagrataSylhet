@@ -1,0 +1,323 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg-color: #f8f8ff;
+    --font-color: #121212;
+    --sub-font-color: #3b3b3b;
+    --nav-text: #f8f8ff;
+    --border-color: #ccc;
+    --div-color: #2f475e;
+    --share-icon-color: #f8f8ff;
+
+    /* FONT SIZES */
+    --big-font-size: 1.2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem;
+    --tiny-font-size: 0.5rem;
+}
+
+/* DEFAULT CLASSES */
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+.chevronRotate {
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+}
+/* DEFAULT CLASSES */
+
+body {
+    font-family: 'SolaimanLipi', sans-serif;
+    font-size: inherit;
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+body .grid-body {
+    width: 70%;
+    background-color: var(--bg-color);
+    margin: auto;
+}
+
+.Header {
+    position: sticky;
+}
+
+.dateBlock {
+    color: var(--share-icon-color);
+    background-color: var(--div-color);
+    padding: 1rem;
+}
+
+.dateBlock .inner-dateBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+
+.inner-dateBlock p {
+    text-align: center;
+}
+
+.headLogo {
+    width: 40%;
+    display: flex;
+    margin: auto;
+}
+
+.Header .category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5px;
+    background-color: #2f475e;
+    margin-bottom: 10px;
+}
+
+.Header .category .hamburger {
+    font-size: var(--big-font-size);
+    color: var(--bg-color);
+    display: none;
+}
+
+.Header .category .hamburger i {
+    width: 100%;
+}
+
+.Header .category a {
+    position: relative;
+    font-size: var(--big-font-size);
+}
+
+.Header .category a p {
+    position: relative;
+    padding: 0.2rem;
+    overflow: hidden;
+}
+
+.Header .category a p::before {
+    content: '';
+    background-color: #d4f034;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 0.1rem;
+    bottom: 0;
+    left: -100%;
+    transition: left 0.3s ease-out;
+}
+
+.Header .category a p:hover::before {
+    left: 0;
+    transition: left 0.3s ease-in;
+}
+
+.Header .category a p::after {
+    content: '';
+    background-color: #d4f034;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 0.1rem;
+    bottom: 0;
+    left: 100%;
+    transition: left 0.3s ease-out;
+}
+
+.Header .category a p:hover::after {
+    left: 0;
+    transition: left 0.3s ease-in;
+}
+
+.category ul {
+    position: relative;
+}
+
+.category ul a {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.category ul a i {
+    font-size: small;
+}
+
+.category ul ol {
+    position: absolute;
+    background-color: var(--div-color);
+    padding: 0.5rem;
+    left: 50%;
+    top: 115%;
+    transform: translate(-50%, 0);
+    transition: top 0.3s ease;
+    z-index: 2;
+}
+
+.category ul ol a:nth-child(n) {
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.category ul ol a:nth-child(n)::before {
+    content: '●';
+    padding-right: 0.5rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.category ul ol a:nth-child(n):hover {
+    background: linear-gradient(90deg, #33793e0a, #1fd3e0, #33793e0a);
+    transition: all 0.3s ease;
+}
+#navDrop .bi-chevron-right {
+    transition: all 0.3s ease;
+}
+
+/* MARQUEE */
+.Header .sironam {
+    display: flex;
+    background-color: var(--div-color);
+    height: auto;
+}
+
+.sironam .sironamTitle {
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+.sironam .sironamTitle p{
+    font-size: var(--normal-font-size);
+    color: var(--bg-color);
+}
+
+.sironam .shironamHeadline {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 2.5rem;
+}
+.sironam .shironamHeadline a {
+    color: var(--font-color);
+}
+
+.sironam .shironamHeadline {
+    background-color: white;
+    border: 2px solid #2f475e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.sironam .shironamHeadline a:hover {
+    color: #b10505;
+}
+.sironam .shironamHeadline a:nth-child(n) {
+    position: relative;
+}
+.sironam .shironamHeadline a:nth-child(n)::before {
+    content: '●';
+    padding: 0.5rem;
+}
+
+
+/* lead top  */
+.LeadTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* lead  */
+.lead {
+    width: 50%;
+}
+
+.leadImage {
+    width: 100%;
+}
+
+/* top  */
+.top {
+    display: flex;
+    flex-direction: row;
+}
+
+.topImage {
+    width: 50%;
+}
+
+/* category name  */
+.categoryName {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.categoryName span {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.categoryName p {
+    margin-left: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .dateBlock .inner-dateBlock {
+        justify-content: center;
+    }
+    .category {
+        justify-content: flex-start !important;
+        flex-direction: column !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+    .category .hamburger {
+        display: block !important;
+    }
+    .category ul {
+        flex-direction: column;
+    }
+}
