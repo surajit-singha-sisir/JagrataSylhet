@@ -31,6 +31,7 @@ img {
 a {
     color: var(--bg-color);
     text-decoration: none;
+    color: var(--font-color)
 }
 
 li {
@@ -271,6 +272,23 @@ body .grid-body {
     width: 100%;
 }
 
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .textOverImage {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    padding: 5px 10px 5px; 
+    background-image: linear-gradient(to bottom, rgba(36, 34, 34, 0), rgb(0, 0, 0));;
+    width:100%;
+  }
+
+.padding1{
+    padding: 3px 3px;
+}
 /* top  */
 .top {
     display: flex;
@@ -283,9 +301,7 @@ body .grid-body {
 
 /* category name  */
 .categoryName {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
+    
 }
 
 .categoryName span {
@@ -296,7 +312,6 @@ body .grid-body {
 }
 
 .categoryName p {
-    margin-left: 15px;
 }
 
 
