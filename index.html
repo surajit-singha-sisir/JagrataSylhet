@@ -2,24 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jagrata Sylhet</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.cdnfonts.com/css/solaimanlipi" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/solaimanlipi" rel="stylesheet" />
 
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
     <script src="script.js"></script>
-
 </head>
 
 <body>
 
+    <!-- DATE AND TIME -->
     <div class="dateBlock">
-        <div class="inner-dateBlock">
+        <div class="inner-dateBlock container">
             <p>আজ শনিবার, ১৫ আষাঢ় ১৪৩১ | ২৯ জুন ২০২৪</p>
             <div class="social">
                 <!-- facebook link  -->
@@ -37,339 +36,171 @@
             </div>
         </div>
     </div>
-    <!-- DATE AND TIME -->
-    <section class="grid-body">
-
+    <!-- NAVIGATION STICKY CONTAINER -->
+    <section class="grid-body container">
         <div class="Header">
             <!-- LOGO -->
             <a href="#"><img class="headLogo" src="resources/logo.png" alt="jagrata sylhet logo" /></a>
-            <!-- catagory list  bi-x-lg-->
+
+            <!-- catagory-->
             <nav class="category">
                 <i class="bi bi-list hamburger"></i>
-                <ul>
-                    <a href="#">
-                        <p>সিলেট</p>
-                    </a>
-                </ul>
-                <ul id="dropDown">
-                    <a id="navDrop" href="#">
-                        <p>সিলেট</p>
-                        <i class="bi bi-chevron-right"></i>
-                    </a>
-                    <ol>
-                        <a href="#">মৌলভীবাজার</a>
-                        <a href="#">মৌলভীবাজার</a>
-                        <a href="#">মৌলভীবাজার</a>
-                    </ol>
-                </ul>
-                <ul>
-                    <a href="#">
-                        <p>সিলেট</p>
-                    </a>
-                </ul>
-                <ul>
-                    <a href="#">
-                        <p>সিলেট</p>
-                    </a>
-                </ul>
-                <ul id="dropDown">
-                    <a id="navDrop" href="#">
-                        <p>সিলেট</p>
-                        <i class="bi bi-chevron-right"></i>
-                    </a>
-                    <ol>
-                        <a href="#">মৌলভীবাজার</a>
-                        <a href="#">মৌলভীবাজার</a>
-                        <a href="#">মৌলভীবাজার</a>
-                    </ol>
-                </ul>
+                <span class="categoryList">
+                    <a class="underlineOnHover" href="#">সিলেট</a>
+                    <ul id="dropDown">
+                        <a id="navDrop" href="#">
+                            <p>সিলেট</p>
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <li>
+                            <a href="#">মৌলভীবাজার</a>
+                            <a href="#">মৌলভীবাজার</a>
+                            <a href="#">মৌলভীবাজার</a>
+                            <a href="#">মৌলভীবাজার</a>
+                        </li>
+                    </ul>
+                    <a href="#">সিলেট</a>
+                    <a href="#">সিলেট</a>
+                    <ul id="dropDown">
+                        <a id="navDrop" href="#">
+                            <p>সিলেট</p>
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <li>
+                            <a href="#">মৌলভীবাজার</a>
+                            <a href="#">মৌলভীবাজার</a>
+                            <a href="#">মৌলভীবাজার</a>
+                        </li>
+                    </ul>
+                    <a href="#">সিলেট</a>
+                    <a href="#">সিলেট</a>
+                    <a href="#">সিলেট</a>
+                    <a href="#">সিলেট</a>
+                    <a href="#">সিলেট</a>
+                    <a href="#">সিলেট</a>
+                </span>
             </nav>
 
-
-            <div class="sironam">
-                <div class="sironamTitle">
-                    <p>শিরোনাম</p>
-                </div>
-                <marquee class="shironamHeadline" onmouseover="this.stop()" onmouseleave="this.start()">
-                    <a href="#">সিলেট-সুনামগঞ্জে ফের বন্যার শঙ্কা</a>
-                    <a href="#">সিলেট-সুনামগঞ্জে ফের বন্যার শঙ্কা</a>
-                    <a href="#">সিলেট-সুনামগঞ্জে ফের বন্যার শঙ্কা</a>
-                    <a href="#">সিলেট-সুনামগঞ্জে ফের বন্যার শঙ্কা</a>
-                </marquee>
-            </div>
-        </div>
-        <div class="LeadTop mt-3">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 padding1">
-                        <div class="imageContainer">
-
-                            <img src="https://dummyimage.com/1920x1080/ddd/fff" alt="lead image">
-                            <div class="textOverImage">
-                                <h5>সিলেটের রাজ্যের সঙ্গীতে শঙ্কা</h5>
-                                <p style="margin: 0px 0px 5px;">অন্যতম জন্মজাতীয় প্রধানমন্ত্রী শাখার শিরোনামের শঙ্কা
-                                    দেখানো হয়েছে। শিরোনামের
-                                    জন্মজাতীয় প্রধানমন্ত্রী শাখার মানের মূল্যের উন্নতির জন্য শিরোনামের শঙ্কা </p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- top image  -->
-                    <div class="col-md-6 d-flex justify-content-between">
-                        <div class="row">
-                            <div class="col-md-6 padding1">
-                                <div class="imageContainer">
-
-                                    <img src="https://dummyimage.com/1920x1080/ddd/000" alt="lead image">
-                                    <div class="textOverImage">
-                                        <p class="fs-6" style="margin-bottom:4px;">সিলেটের রাজ্যের সঙ্গীতে শঙ্কা</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6 padding1">
-                                <div class="imageContainer">
-
-                                    <img src="https://dummyimage.com/1920x1080/ddd/000" alt="lead image">
-                                    <div class="textOverImage">
-                                        <p class="fs-6" style="margin-bottom:4px;">সিলেটের রাজ্যের সঙ্গীতে শঙ্কা</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6 padding1">
-                                <div class="imageContainer">
-
-                                    <img src="https://dummyimage.com/1920x1080/ddd/000" alt="lead image">
-                                    <div class="textOverImage">
-                                        <p class="fs-6" style="margin-bottom:4px;">সিলেটের রাজ্যের সঙ্গীতে শঙ্কা</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6 padding1">
-                                <div class="imageContainer">
-
-                                    <img src="https://dummyimage.com/1920x1080/ddd/000" alt="lead image">
-                                    <div class="textOverImage">
-                                        <p class="fs-6" style="margin-bottom:4px;">সিলেটের রাজ্যের সঙ্গীতে শঙ্কা</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        </div>
-
-        <!-- second order -->
-        <div class="container mt-3">
-            <div class="row ">
-                <div class="col-md-3 px-1">
-                    <div class="categoryName d-flex align-items-center">
-                        <span></span>
-                        <p class="mb-0 mx-3">সিলেট</p>
-                    </div>
-                    <a href="#" class="newsImage">
-                        <img src="http://placehold.it/1920x1080" alt="news Image">
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-                        <p class="m-0">মোহাম্মদপুরে খালের জায়গা দখল করে গড়ে ওঠা সাদিক অ্যাগ্রো পুরোপুরি গুঁড়িয়ে দিয়েছে
-                            ডিএনসিসি</p>
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                </div>
-                <div class="col-md-3 px-1">
-                    <div class="categoryName d-flex align-items-center">
-                        <span></span>
-                        <p class="mb-0 mx-3">আন্তর্জাতিক</p>
-                    </div>
-                    <a href="#" class="newsImage">
-                        <img src="http://placehold.it/1920x1080" alt="news Image">
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-                        <p class="m-0">মোহাম্মদপুরে খালের জায়গা দখল করে গড়ে ওঠা সাদিক অ্যাগ্রো পুরোপুরি গুঁড়িয়ে দিয়েছে
-                            ডিএনসিসি</p>
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                </div>
-                <div class="col-md-3 px-1">
-                    <div class="categoryName d-flex align-items-center">
-                        <span></span>
-                        <p class="mb-0 mx-3">ঢাকা</p>
-                    </div>
-                    <a href="#" class="newsImage">
-                        <img src="http://placehold.it/1920x1080" alt="news Image">
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-                        <p class="m-0">মোহাম্মদপুরে খালের জায়গা দখল করে গড়ে ওঠা সাদিক অ্যাগ্রো পুরোপুরি গুঁড়িয়ে দিয়েছে
-                            ডিএনসিসি</p>
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                </div>
-                <div class="col-md-3 px-1">
-                    <div class="categoryName d-flex align-items-center">
-                        <span></span>
-                        <p class="mb-0 mx-3">বরিশাল</p>
-                    </div>
-                    <a href="#" class="newsImage">
-                        <img src="http://placehold.it/1920x1080" alt="news Image">
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-                        <p class="m-0">মোহাম্মদপুরে খালের জায়গা দখল করে গড়ে ওঠা সাদিক অ্যাগ্রো পুরোপুরি গুঁড়িয়ে দিয়েছে
-                            ডিএনসিসি</p>
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                    <a href="#" class="newsImage">
-
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-3">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="categoryName mb-2 d-flex align-items-center">
-                        <span></span>
-                        <p class="mb-0 mx-3">সিলেট</p>
-                    </div>
-                </div>
-                <div class="col-md-3 px-1">
-                    <a href="#" class="newsImage">
-                        <img src="http://placehold.it/1920x1080" alt="news Image">
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-                        <p class="m-0">মোহাম্মদপুরে খালের জায়গা দখল করে গড়ে ওঠা সাদিক অ্যাগ্রো পুরোপুরি গুঁড়িয়ে দিয়েছে
-                            ডিএনসিসি</p>
-                    </a>
-                </div>
-                <div class="col-md-3 px-1">
-                    <a href="#" class="newsImage">
-                        <img src="http://placehold.it/1920x1080" alt="news Image">
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-                        <p class="m-0">মোহাম্মদপুরে খালের জায়গা দখল করে গড়ে ওঠা সাদিক অ্যাগ্রো পুরোপুরি গুঁড়িয়ে দিয়েছে
-                            ডিএনসিসি</p>
-                    </a>
-                </div><div class="col-md-3 px-1">
-                    <a href="#" class="newsImage">
-                        <img src="http://placehold.it/1920x1080" alt="news Image">
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-                        <p class="m-0">মোহাম্মদপুরে খালের জায়গা দখল করে গড়ে ওঠা সাদিক অ্যাগ্রো পুরোপুরি গুঁড়িয়ে দিয়েছে
-                            ডিএনসিসি</p>
-                    </a>
-                </div><div class="col-md-3 px-1">
-                    <a href="#" class="newsImage">
-                        <img src="http://placehold.it/1920x1080" alt="news Image">
-                        <p class="fs-6 m-0">গুঁড়িয়ে দেয়া হলো সাদিক অ্যাগ্রোর পুরো খামার</p>
-                        <p class="m-0">মোহাম্মদপুরে খালের জায়গা দখল করে গড়ে ওঠা সাদিক অ্যাগ্রো পুরোপুরি গুঁড়িয়ে দিয়েছে
-                            ডিএনসিসি</p>
-                    </a>
+            <!-- RESPONSIVE NAVBAR -->
+            <div class="JGresNav">
+                <div class="jagrataResNav hide">
+                    <span class="categoryList">
+                        <a href="#">সিলেট</a>
+                        <ul id="dropDown">
+                            <a id="navDrop" href="#">
+                                <p>সিলেট</p>
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <li>
+                                <a href="#">মৌলভীবাজার</a>
+                                <a href="#">মৌলভীবাজার</a>
+                                <a href="#">মৌলভীবাজার</a>
+                                <a href="#">মৌলভীবাজার</a>
+                            </li>
+                        </ul>
+                        <a href="#">সিলেট</a>
+                        <a href="#">সিলেট</a>
+                        <ul id="dropDown">
+                            <a id="navDrop" href="#">
+                                <p>সিলেট</p>
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <li>
+                                <a href="#">মৌলভীবাজার</a>
+                                <a href="#">মৌলভীবাজার</a>
+                                <a href="#">মৌলভীবাজার</a>
+                            </li>
+                        </ul>
+                        <a href="#">সিলেট</a>
+                        <a href="#">সিলেট</a>
+                        <a href="#">সিলেট</a>
+                        <a href="#">সিলেট</a>
+                        <a href="#">সিলেট</a>
+                        <a href="#">সিলেট</a>
+                    </span>
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <div class="sironam container">
+        <div class="sironamTitle">
+            <p>শিরোনাম</p>
+        </div>
+        <marquee class="shironamHeadline" onmouseover="this.stop()" onmouseleave="this.start()">
+            <a href="#">সিলেট-সুনামগঞ্জে ফের বন্যার শঙ্কা</a>
+            <a href="#">সিলেট-সুনামগঞ্জে ফের বন্যার শঙ্কা</a>
+            <a href="#">সিলেট-সুনামগঞ্জে ফের বন্যার শঙ্কা</a>
+            <a href="#">সিলেট-সুনামগঞ্জে ফের বন্যার শঙ্কা</a>
+        </marquee>
+    </div>
+
+    <section class="topHeadNews container">
+        <!-- COLUMN -->
+        <div class="column lead">
+            <a href="#" class="rowView">
+                <div class="objectCenterImg">
+                    <img src="https://dummyimage.com/800x600/000/fff" alt="">
+                </div>
+                <span>
+                    <a href="#" class="h2 text__Ellipsis_2">৩১ মে’র মধ্যে মালয়েশিয়া যেতে না পারা কর্মীদের আগামী ১৫ দিন
+                        শিয়া
+                        যেতে না পারা কর্মীদের আগামী ১</a>
+                    <p class="text__Ellipsis_10">এ সময়ের মধ্যে যারা টাকা দিতে পারবে না তাদের বিরুদ্ধে আইনানুগ ব্যবস্থা
+                        নেওয়া
+                        হবে। প্রতিমন্ত্রী বলেন, মালয়েশিয়ায় কর্মী প্রেরণকারী নির্ধারিত ১০০টি রিক্রুটিং এজেন্সি কর্মীদের
+                        টাকাপারবে না তাদের বিরুদ্ধে আইনানুগ ব্যবস্থা
+                        নেওয়া
+                        হবে। প্রতিমন্ত্রী বলেন, মালয়েশিয়ায় কর্মী প্রেরণকারী নির্ধারিত ১০০টি রিক্রুটিং এজেন্সি কর্মীদের
+                        টাকা
+                        ফেরত দেওয়ার দায়িত্ব নিবে। কর্মী প্রেরণ প্রক্রিয়ায় জড়িত সকল রিক্রুটিং এজেন্সির নিকট থেকে
+                        ক্ষতিগ্রস্থ
+                        কর্মীদের টাকা ফেরৎ প্রদানের বিষয়টি বায়রা তত্ত্বাবধান কর
+                        ফেরত দেওয়ার দায়িত্ব নিবে। কর্মী প্রেরণ প্রক্রিয়ায় জড়িত সকল রিক্রুটিং এজেন্সির নিকট থেকে
+                        ক্ষতিগ্রস্থ
+                        কর্মীদের টাকা ফেরৎ প্রদানের বিষয়টি বায়রা তত্ত্বাবধান করবে।</p>
+                </span>
+            </a>
+        </div>
+        <!-- TOPS COLUMN -->
+        <div class="column top-1">
+            <a href="#">
+                <div class="objectCenterImg">
+                    <img src="https://dummyimage.com/800x600/000/fff" alt="">
+                </div>
+                <a href="#" class="h3 text__Ellipsis_2">৩১ মে’র মধ্যে মালয়েশিয়া যেতে না পারা কর্মীদের আগামী ১৫ দিন শিয়া
+                    যেতে না পারা কর্মীদের আগামী ১</a>
+            </a>
+        </div>
+        <!-- TOPS COLUMN -->
+        <div class="column top-2">
+            <div class="objectCenterImg">
+                <img src="https://dummyimage.com/800x600/000/fff" alt="">
+            </div>
+            <a href="#" class="h3 text__Ellipsis_2">৩১ মে’র মধ্যে মালয়েশিয়া যেতে না পারা কর্মীদের আগামী ১৫ দিন শিয়া যেতে
+                না
+                পারা কর্মীদের আগামী ১</a>
+        </div>
+        <!-- TOPS COLUMN -->
+        <div class="column top-3">
+            <div class="objectCenterImg">
+                <img src="https://dummyimage.com/800x600/000/fff" alt="">
+            </div>
+            <a href="#" class="h3 text__Ellipsis_2">৩১ মে’র মধ্যে মালয়েশিয়া যেতে না পারা কর্মীদের আগামী ১৫ দিন শিয়া যেতে
+                না
+                পারা কর্মীদের আগামী ১</a>
+        </div>
+        <!-- TOPS COLUMN -->
+        <div class="column top-4">
+            <div class="objectCenterImg">
+                <img src="https://dummyimage.com/800x600/000/fff" alt="">
+            </div>
+            <a href="#" class="h3 text__Ellipsis_2">৩১ মে’র মধ্যে মালয়েশিয়া যেতে না পারা কর্মীদের আগামী ১৫ দিন শিয়া যেতে
+                না
+                পারা কর্মীদের আগামী ১</a>
+        </div>
     </section>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
 
 </html>

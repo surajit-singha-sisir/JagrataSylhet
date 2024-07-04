@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Underline Effect</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Resetting default list styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling the list items */
+.underline-list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.underline-list li a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+}
+
+.underline-list li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background-color: #333;
+  transition: width 0.3s ease;
+}
+
+.underline-list li a:hover::after {
+  width: 100%;
+}
+
+
+</style>
+<body>
+
+<ul class="underline-list">
+  <li><a href="#">Item 1</a></li>
+  <li><a href="#">Item 2</a></li>
+  <li><a href="#">Item 3</a></li>
+</ul>
+
+</body>
+</html>
